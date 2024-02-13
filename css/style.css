@@ -326,7 +326,7 @@ body {
 .decoration-container {
   width: 100vw;
   height: 28rem;
-  background: url(/img/decoration-container3.png);
+  background: url(../img/decoration-container3.png);
   margin-bottom: 12.8rem;
   border-top: 0.4rem solid #5ba697;
   border-bottom: 0.4rem solid #5ba697;
@@ -354,7 +354,7 @@ body {
   display: grid;
   margin-bottom: 12.8rem;
   text-align: center;
-  background-image: url(/img/hero-background.png);
+  background-image: url(../img/hero-background.png);
   background-size: cover;
 }
 .hero__wrapper {
