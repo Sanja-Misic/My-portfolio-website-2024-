@@ -1,0 +1,21 @@
+@keyframes moveLineButton {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes tehnoliogies-icon-change {
+  0% {
+    fill: initial;
+  }
+  50% {
+    fill: var(--animation-icon-color);
+    color: var(--animation-icon-color);
+  }
+  100% {
+    fill: initial;
+  }
+}

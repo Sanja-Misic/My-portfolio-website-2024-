@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  padding: 0.8rem 3rem;
+
+  background: $header-color;
+
+  &__logo {
+    width: 12.4rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    &-item {
+      &:link,
+      &:visited {
+        padding: 4px 0px;
+
+        font-size: 16px;
+        color: $background-text-white-color;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        border-bottom: 4px solid $header-hover-color;
+        font-size: 18px;
+      }
+
+      &:active {
+        border-bottom: 4px solid $header-hover-color;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__media-lang {
+    width: 12.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    &-item {
+    }
+
+    &-icon {
+      width: 35px;
+      height: 35px;
+      fill: $background-text-white-color;
+
+      &:hover {
+        fill: $header-hover-color;
+      }
+    }
+  }
+
+  &__lang {
+    &:link,
+    &:visited {
+      color: $background-text-white-color;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    &:hover,
+    &:active {
+      color: $header-hover-color;
+    }
+  }
+}

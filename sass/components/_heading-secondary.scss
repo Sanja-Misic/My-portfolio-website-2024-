@@ -1,0 +1,15 @@
+.heading-seccondary-wrapper {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 12rem;
+
+  &--left {
+    justify-items: left;
+  }
+}
+.heading-secondary-decoration {
+  width: 21.6rem;
+  height: 0.8rem;
+  background-color: $green-details-color;
+  margin-top: 2.4rem;
+}

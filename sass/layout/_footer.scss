@@ -1,0 +1,78 @@
+.footer {
+  width: 100vw;
+  padding: 2.4rem 3rem;
+  font-size: 1.4rem;
+
+  background: url(/img/decoration-container.png);
+  border-top: 0.4rem solid $green-details-color;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.6rem;
+
+    border-bottom: 0.2rem solid $background-text-black-color;
+  }
+
+  &__media {
+    display: flex;
+    gap: 0.4rem;
+    width: 19rem;
+
+    &-item:hover .footer__media-icon {
+      fill: $purple-details-color;
+    }
+    &-icon {
+      width: 3.5rem;
+      fill: $background-text-black-color;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 2.4rem;
+
+    &-item {
+      &:link,
+      &:visited {
+        font-weight: 600;
+        color: $background-text-black-color;
+      }
+
+      &:hover,
+      &:active {
+        color: $purple-details-color;
+      }
+    }
+  }
+  &__info {
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    &-item {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover .footer__info-icon {
+        fill: $purple-details-color;
+      }
+      &:hover .footer__info-text {
+        color: $purple-details-color;
+      }
+    }
+    &-icon {
+      width: 1.6rem;
+    }
+    &-text {
+      color: $background-text-black-color;
+    }
+  }
+  &__copy-rights {
+    padding: 1.6rem 0;
+    text-align: center;
+  }
+}

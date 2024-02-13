@@ -1,0 +1,43 @@
+.under-construction {
+  @include set-section-width;
+
+  &__text {
+    color: $background-text-black-color;
+    font-size: 3.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__link {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: max-content;
+    border-bottom: 0.2rem solid $background-text-black-color;
+
+    &:hover {
+      border-bottom: 0.2rem solid $purple-details-color;
+    }
+
+    &:hover .under-construction__link-text {
+      color: $purple-details-color;
+    }
+
+    &:hover .under-construction__link-icon {
+      fill: $background-text-white-color;
+      stroke: $purple-details-color;
+    }
+
+    &-text {
+      font-size: 2.4rem;
+      color: $background-text-black-color;
+    }
+
+    &-icon {
+      fill: $background-text-white-color;
+      stroke: $background-text-black-color;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}

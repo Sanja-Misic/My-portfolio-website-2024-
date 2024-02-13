@@ -1,0 +1,17 @@
+@import 'abstracts/animations';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/buttons';
+@import 'components/contact-section';
+@import 'components/decoration-container';
+@import 'components/heading-secondary';
+
+@import 'pages/home';
+@import 'pages/under-construction';
