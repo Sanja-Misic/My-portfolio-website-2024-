@@ -151,7 +151,7 @@ body {
   width: 100vw;
   padding: 2.4rem 3rem;
   font-size: 1.4rem;
-  background: url(/img/decoration-container.png);
+  background: url(../img/decoration-container.png);
   border-top: 0.4rem solid #5ba697;
 }
 .footer__wrapper {
