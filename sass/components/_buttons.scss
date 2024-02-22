@@ -1,11 +1,10 @@
-.hero__button {
+.button {
   &:link,
   &:visited {
     position: relative;
     display: flex;
     align-items: center;
     gap: 1.6rem;
-    margin-bottom: 3.2rem;
     padding: 1.2rem 4rem;
 
     text-align: center;
@@ -14,7 +13,6 @@
     font-weight: 400;
     color: $background-text-white-color;
 
-    background-color: $purple-details-color;
     background-color: $hero-button-color;
     border: 2px solid $hero-button-color;
     border-radius: 3rem;
@@ -48,5 +46,36 @@
     width: 2.4rem;
     height: 2.4rem;
     fill: $background-text-white-color;
+  }
+
+  &-hero {
+    margin-bottom: 3.2rem;
+  }
+
+  &-live {
+    &:link,
+    &:visited {
+      background-color: $purple-details-color;
+      border: 2px solid $purple-details-color;
+    }
+    &:hover,
+    &:active {
+      color: $purple-details-color;
+      background-color: $background-text-white-color;
+      box-shadow: 0px 5px 16px 0px $shadow-color;
+    }
+  }
+  &-code {
+    &:link,
+    &:visited {
+      background-color: $green-details-color;
+      border: 2px solid $green-details-color;
+    }
+    &:hover,
+    &:active {
+      color: $green-details-color;
+      background-color: $background-text-white-color;
+      box-shadow: 0px 5px 16px 0px $shadow-color;
+    }
   }
 }

@@ -1,0 +1,129 @@
+.challenge {
+  @include set-section-width;
+
+  &__wrapper {
+    display: flex;
+  }
+  &__text {
+    margin-right: 4rem;
+    margin-top: 8.8rem;
+  }
+}
+
+.process {
+  &__heading {
+    @include set-section-width;
+  }
+  &__step {
+    @include set-section-width;
+    position: relative;
+    margin-bottom: 9.6rem;
+    padding: 3.6rem 4.8rem;
+
+    &-num {
+      position: absolute;
+      top: -8rem;
+      // bottom: 12rem;
+      left: 2.4rem;
+
+      font-size: 18.4rem;
+      // letter-spacing: -2rem;
+      color: rgba($yellow-details-color, 0.2);
+    }
+    &-title {
+      margin-bottom: 2.4rem;
+      padding-top: 8rem;
+      padding-left: 4.8rem;
+
+      font-size: 2.4rem;
+      letter-spacing: 0.2rem;
+    }
+    &-text {
+      padding: 0 16rem;
+    }
+    &-text-item {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__img-video-wrapper {
+    width: 100%;
+    height: 48rem;
+    margin-bottom: 20rem;
+    text-align: center;
+    background-color: rgba($yellow-details-color, 0.4);
+    background-position: center;
+    background-size: 128rem;
+    background-repeat: no-repeat;
+
+    // &--step1 {
+    // }
+    &--step2 {
+      background-image: url('/img/design-page/2-lira-excellent.png');
+    }
+    &--step3 {
+      background-image: url('/img/design-page/3-lira-excellent.png');
+    }
+    &--step4a {
+      background-image: url('/img/design-page/4a-lira-excellent.png');
+    }
+    &--step4b {
+      background-image: url('/img/design-page/4b-lira-excellent.png');
+    }
+    &--develop {
+      background-image: url('/img/design-page/design-page__lira-excellent.png');
+      background-repeat: repeat-x;
+      background-size: 50rem;
+      margin-bottom: 0%;
+    }
+  }
+
+  &__img-video-wrapper video {
+    width: 128rem;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.functionalitis {
+  @include set-section-width;
+  margin-top: 12rem;
+  // margin-bottom: 12rem;
+
+  &__list {
+    margin-top: 8.8rem;
+    margin: 8.8rem 4.8rem;
+    &-item {
+      margin-bottom: 3.2rem;
+      font-size: 2rem;
+      &-bold {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.project {
+  &__buttons {
+    display: flex;
+    gap: 4.8rem;
+    justify-content: center;
+  }
+
+  &__other-part {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 12rem;
+
+    &-link {
+      &--design {
+        color: $purple-details-color;
+        border-bottom: 0.1rem solid $purple-details-color;
+      }
+      &--develop {
+        color: $green-details-color;
+        border-bottom: 0.1rem solid $green-details-color;
+      }
+    }
+  }
+}

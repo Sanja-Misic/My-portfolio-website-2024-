@@ -13,3 +13,18 @@
   background-color: $green-details-color;
   margin-top: 2.4rem;
 }
+
+.heading-secondary-project-page {
+  margin-top: 3.2rem;
+  padding: 0.8rem 2.4rem;
+  font-weight: bold;
+  color: $background-text-white-color;
+
+  &--design {
+    background-color: $purple-details-color;
+  }
+
+  &--develop {
+    background-color: $green-details-color;
+  }
+}

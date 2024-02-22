@@ -63,6 +63,19 @@
       filter: saturate(0%);
       z-index: -1;
     }
+
+    &-under-constr {
+      filter: saturate(0%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover .selected__design,
+      &:hover .selected__develop {
+        opacity: 0;
+        cursor: default;
+      }
+    }
   }
 
   &__design,
@@ -74,7 +87,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      font-size: 2.4rem;
+      font-size: 1.2rem;
       font-weight: bold;
       color: $background-text-white-color;
 
@@ -88,6 +101,7 @@
 
     &:hover {
       width: 70%;
+      font-size: 2.4rem;
     }
   }
 
@@ -112,7 +126,7 @@
 
   &__active {
     width: 30% !important;
-    font-size: 1.8rem !important;
+    font-size: 1.2rem !important;
   }
 
   &__img {
