@@ -5,7 +5,7 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    gap: 16rem;
+    gap: 12rem;
   }
   &__heading {
     text-align: left;
@@ -16,10 +16,6 @@
     flex-direction: column;
     gap: 1.6rem;
     width: 50%;
-  }
-
-  &__text {
-    font-size: 1.8rem;
   }
 
   &__img {
@@ -76,5 +72,71 @@
     left: 0%;
     z-index: -1;
     fill: rgba($yellow-details-color, 0.125);
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    &__wrapper {
+      gap: 8rem;
+    }
+    &__info {
+      padding: 3.2rem 4rem;
+
+      &-item {
+        &:hover .contact__info-icon {
+          width: 3.2rem;
+          height: 3.2rem;
+        }
+
+        &:hover .contact__info-text {
+          font-size: 1.8rem;
+        }
+      }
+
+      &-icon {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+
+      &-text {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__background-icon {
+      top: -25%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__img {
+      width: 23rem;
+    }
+
+    &__info {
+      padding: 3.2rem 0rem;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__background-icon {
+      top: -25%;
+    }
   }
 }

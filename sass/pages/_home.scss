@@ -30,6 +30,14 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    &__img {
+      width: 16rem;
+    }
+  }
+}
+
 .selected {
   @include set-section-width;
   margin-bottom: $section-margin-bottom;
@@ -69,12 +77,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
-      &:hover .selected__design,
-      &:hover .selected__develop {
-        opacity: 0;
-        cursor: default;
-      }
     }
   }
 
@@ -134,12 +136,58 @@
     place-self: center;
     transition: all 0.5s ease;
   }
-  &__text-wrapper {
-  }
 
   &__title {
     font-size: 2.4rem;
     margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .selected {
+    &__img-wrapper {
+      height: 32rem;
+    }
+
+    &__design,
+    &__develop {
+      &:link,
+      &:active,
+      &:visited {
+        opacity: 1;
+      }
+
+      &:hover {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__img {
+      width: 32rem;
+      place-self: center;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .selected {
+    &__wrapper {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    &__img-wrapper {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .selected {
+    &__img {
+      width: 24rem;
+    }
   }
 }
 
@@ -189,6 +237,8 @@
   }
 
   &__text {
+    font-size: 2.4rem;
+
     &--html {
       --animation-icon-color: #924e35;
       animation: tehnoliogies-icon-change 2s infinite;
@@ -212,6 +262,45 @@
     &--figma {
       --animation-icon-color: #3a2e4b;
       animation: tehnoliogies-icon-change 1.5s infinite;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .tehnologies {
+    &__wrapper {
+      gap: 4rem;
+    }
+    &__item {
+      width: 12rem;
+    }
+    &__icon {
+      width: 5.6rem;
+      height: 5.6rem;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tehnologies {
+    &__wrapper {
+      gap: 0rem;
+      row-gap: 4rem;
+    }
+    &__item {
+      width: 12rem;
+    }
+    &__icon {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
     }
   }
 }

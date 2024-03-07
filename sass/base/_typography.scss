@@ -4,12 +4,18 @@ body {
   line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
 .heading-primary {
   font-family: 'Amatic SC', sans-serif;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
-  font-size: 8.8rem;
+  font-size: 7.2rem;
   text-align: center;
   color: $green-details-color;
 
@@ -19,10 +25,40 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .heading-primary {
+    font-size: 5.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-primary {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+}
+
 .heading-secondary {
   font-family: 'Amatic SC', sans-serif;
   font-size: 6.6rem;
   line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .heading-secondary {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-secondary {
+    font-size: 4rem;
+  }
 }
 
 .heading-tertiary {
@@ -33,7 +69,7 @@ body {
 
 .hero {
   &__heading-top {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     text-align: center;
   }
   &__text {
@@ -42,6 +78,14 @@ body {
   }
 }
 
-.tehnologies__text {
-  font-size: 2.4rem;
+@media (max-width: 1024px) {
+  .hero {
+    &__heading-top {
+      font-size: 2.4rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
 }

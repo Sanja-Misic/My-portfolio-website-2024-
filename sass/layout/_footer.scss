@@ -76,3 +76,45 @@
     text-align: center;
   }
 }
+
+@media (max-width: 1024px) {
+  .footer {
+    font-size: 1.2rem;
+
+    &__media {
+      width: 16rem;
+    }
+    &__nav {
+      gap: 0.8rem;
+    }
+    &__info {
+      width: 16rem;
+      gap: 0rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 1.2rem;
+
+    &__wrapper {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+
+    &__media {
+      gap: 0.8rem;
+      justify-content: center;
+      width: 100%;
+    }
+    &__nav {
+      gap: 0.8rem;
+    }
+    &__info {
+      width: 100%;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+}
