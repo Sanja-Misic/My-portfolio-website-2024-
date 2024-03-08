@@ -1,6 +1,7 @@
 .contact {
   @include set-section-width;
   margin-bottom: $section-margin-bottom;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;

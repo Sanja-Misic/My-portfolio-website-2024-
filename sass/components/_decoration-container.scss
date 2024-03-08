@@ -1,8 +1,133 @@
 .decoration-container {
+  position: relative;
   width: 100vw;
   height: 28rem;
-  background: url(../img/decoration-container3.png);
   margin-bottom: $section-margin-bottom;
   border-top: 0.4rem solid $green-details-color;
   border-bottom: 0.4rem solid $green-details-color;
+  overflow: hidden;
+
+  &__icon {
+    position: absolute;
+    &--1 {
+      top: 0%;
+      right: 2%;
+      width: 14.2rem;
+      fill: rgba(166, 112, 92, 0.2);
+    }
+    &--2 {
+      bottom: -36%;
+      right: 8%;
+      width: 33.5rem;
+      fill: rgba(130, 98, 176, 0.2);
+    }
+    &--3 {
+      bottom: 28%;
+      right: 32%;
+      width: 16rem;
+      fill: rgba(166, 163, 91, 0.2);
+    }
+    &--4 {
+      bottom: -4%;
+      left: 33%;
+      width: 16rem;
+      fill: rgba(166, 163, 91, 0.2);
+    }
+    &--5 {
+      top: -50%;
+      left: -2%;
+      width: 51.2rem;
+      fill: rgba(166, 163, 91, 0.1);
+    }
+    &--6 {
+      top: -25%;
+      left: 38%;
+      width: 25rem;
+      fill: rgba(179, 206, 207, 0.2);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .decoration-container {
+    &__icon {
+      &--2 {
+        right: 4%;
+      }
+      &--3 {
+        right: 22%;
+        width: 11rem;
+      }
+      &--4 {
+        left: 18%;
+        width: 11rem;
+      }
+      &--5 {
+        left: -10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .decoration-container {
+    &__icon {
+      &--1 {
+        top: -8%;
+        right: -8%;
+        width: 12rem;
+      }
+      &--2 {
+        right: -4%;
+        width: 24rem;
+      }
+      &--3 {
+        bottom: 20%;
+        right: 8%;
+      }
+      &--4 {
+        bottom: 0%;
+        left: 12%;
+      }
+      &--5 {
+        top: -20%;
+        left: -20%;
+        width: 40rem;
+      }
+      &--6 {
+        top: -15%;
+        left: 30%;
+        width: 18rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .decoration-container {
+    &__icon {
+      &--1 {
+        top: -4%;
+      }
+      &--2 {
+        bottom: -26%;
+        width: 20rem;
+      }
+      &--3 {
+        width: 8rem;
+      }
+      &--4 {
+        bottom: 6%;
+        left: 0%;
+        width: 10rem;
+      }
+      &--5 {
+        width: 36rem;
+      }
+      &--6 {
+        top: 0%;
+        width: 12rem;
+      }
+    }
+  }
 }
