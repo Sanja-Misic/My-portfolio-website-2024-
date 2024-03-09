@@ -1288,7 +1288,7 @@ body {
     top: -4rem;
   }
   .process__img-video-wrapper--step3 {
-    background-image: url("/img/design-page/3-lira-excellent-mob.png");
+    background-image: url("../img/design-page/3-lira-excellent-mob.png");
   }
 }
 .functionalitis {
