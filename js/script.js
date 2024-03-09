@@ -1,22 +1,31 @@
-const selectedItems = document.querySelectorAll('.selected__item');
+// PRELOADER
+const preloader = document.querySelector('.preloader');
+// console.log(preloader);
 
-selectedItems.forEach(item => {
-  const design = item.querySelector('.selected__design');
-  const develop = item.querySelector('.selected__develop');
+const hideloader = () => {
+  preloader.classList.add('preloader-hide');
+};
 
-  design.addEventListener('mouseenter', () => {
-    develop.classList.add('selected__active');
-  });
+window.addEventListener('load', hideloader);
 
-  design.addEventListener('mouseleave', () => {
-    develop.classList.remove('selected__active');
-  });
+// SELECTED HOVER
 
-  develop.addEventListener('mouseenter', () => {
-    design.classList.add('selected__active');
-  });
+const design = document.querySelector('.selected__design');
+const develop = document.querySelector('.selected__develop');
+console.log(design);
 
-  develop.addEventListener('mouseleave', () => {
-    design.classList.remove('selected__active');
-  });
+design.addEventListener('mouseenter', () => {
+  develop.classList.add('selected__active');
+});
+
+design.addEventListener('mouseleave', () => {
+  develop.classList.remove('selected__active');
+});
+
+develop.addEventListener('mouseenter', () => {
+  design.classList.add('selected__active');
+});
+
+develop.addEventListener('mouseleave', () => {
+  design.classList.remove('selected__active');
 });
