@@ -1287,8 +1287,37 @@ body {
   .process__step-num {
     top: -4rem;
   }
+  .process__img-video-wrapper {
+    background-size: 76.8rem;
+  }
+  .process__img-video-wrapper--step2 {
+    background-image: url("../img/design-page/2-lira-excellent-768px.png");
+  }
   .process__img-video-wrapper--step3 {
-    background-image: url("../img/design-page/3-lira-excellent-mob.png");
+    background-image: url("../img/design-page/3-lira-excellent-768px.png");
+  }
+  .process__img-video-wrapper--step4a {
+    background-image: url("../img/design-page/4a-lira-excellent-768px.png");
+  }
+  .process__img-video-wrapper--step4b {
+    background-image: url("../img/design-page/4b-lira-excellent-768px.png");
+  }
+}
+@media (max-width: 425px) {
+  .process__img-video-wrapper {
+    background-size: 37.5rem;
+  }
+  .process__img-video-wrapper--step2 {
+    background-image: url("../img/design-page/2-lira-excellent-375px.png");
+  }
+  .process__img-video-wrapper--step3 {
+    background-image: url("../img/design-page/3-lira-excellent-375px.png");
+  }
+  .process__img-video-wrapper--step4a {
+    background-image: url("../img/design-page/4a-lira-excellent-375px.png");
+  }
+  .process__img-video-wrapper--step4b {
+    background-image: url("../img/design-page/4b-lira-excellent-375px.png");
   }
 }
 .functionalitis {
@@ -1330,6 +1359,7 @@ body {
   }
 }
 .project__buttons {
+  margin: 0 3.2rem;
   display: flex;
   gap: 4.8rem;
   justify-content: center;
