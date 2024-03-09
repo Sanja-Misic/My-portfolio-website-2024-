@@ -819,15 +819,18 @@ body {
   padding: 3.2rem;
   width: 100%;
   height: 100vh;
+  z-index: 3;
+  padding: 3.2;
   background-color: #fcfcfc;
 }
 .preloader-icon {
   place-self: center;
-  width: 24rem;
+  width: 18rem;
 }
 .preloader-text {
+  text-align: center;
+  width: 100%;
   position: absolute;
-  place-self: center;
   bottom: 0%;
   margin-bottom: 3.2rem;
   font-size: 1.4rem;
@@ -837,6 +840,11 @@ body {
   animation: fade 1s forwards;
 }
 
+@media (max-width: 1024px) {
+  .preloader-icon {
+    width: 8rem;
+  }
+}
 @keyframes fade {
   100% {
     opacity: 0;

@@ -1,9 +1,15 @@
 // PRELOADER
 const preloader = document.querySelector('.preloader');
-// console.log(preloader);
+const html = document.querySelector('html');
+const body = document.querySelector('body');
+
+html.style.overflowY = 'hidden';
+body.style.overflowY = 'hidden';
 
 const hideloader = () => {
   preloader.classList.add('preloader-hide');
+  html.style.overflowY = 'visible';
+  body.style.overflowY = 'visible';
 };
 
 window.addEventListener('load', hideloader);
@@ -12,7 +18,6 @@ window.addEventListener('load', hideloader);
 
 const design = document.querySelector('.selected__design');
 const develop = document.querySelector('.selected__develop');
-console.log(design);
 
 design.addEventListener('mouseenter', () => {
   develop.classList.add('selected__active');

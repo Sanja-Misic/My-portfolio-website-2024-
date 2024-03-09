@@ -4,17 +4,20 @@
   padding: 3.2rem;
   width: 100%;
   height: 100vh;
+  z-index: 3;
+  padding: 3.2;
 
   background-color: $background-text-white-color;
 
   &-icon {
     place-self: center;
-    width: 24rem;
+    width: 18rem;
   }
 
   &-text {
+    text-align: center;
+    width: 100%;
     position: absolute;
-    place-self: center;
     bottom: 0%;
     margin-bottom: 3.2rem;
     font-size: 1.4rem;
@@ -23,6 +26,13 @@
 
   &-hide {
     animation: fade 1s forwards;
+  }
+}
+@media (max-width: 1024px) {
+  .preloader {
+    &-icon {
+      width: 8rem;
+    }
   }
 }
 
