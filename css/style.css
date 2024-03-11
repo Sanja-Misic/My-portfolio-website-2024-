@@ -1565,3 +1565,17 @@ body {
   width: 2.4rem;
   height: 2.4rem;
 }
+
+@media (max-width: 768px) {
+  .under-construction__text {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .under-construction__link-text {
+    font-size: 1.8rem;
+  }
+  .under-construction__link-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
