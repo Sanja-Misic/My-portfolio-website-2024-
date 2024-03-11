@@ -14,6 +14,19 @@ const hideloader = () => {
 
 window.addEventListener('load', hideloader);
 
+// NAV MOB BTN
+const navMobBtn = document.querySelector('.header__mob-btn');
+const navMobContainer = document.querySelector('.header__mob');
+const navMobCloseBtn = document.querySelector('.header__mob-close');
+
+navMobBtn.addEventListener('click', () => {
+  navMobContainer.classList.add('header__mob--show');
+});
+
+navMobCloseBtn.addEventListener('click', () => {
+  navMobContainer.classList.remove('header__mob--show');
+});
+
 // SELECTED HOVER
 
 const design = document.querySelector('.selected__design');

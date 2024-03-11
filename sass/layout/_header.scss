@@ -94,6 +94,136 @@
       color: $header-hover-color;
     }
   }
+
+  &__mob-btn {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    fill: $background-text-white-color;
+
+    display: none;
+  }
+
+  &__mob {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 8rem 3.2rem;
+
+    background-color: $header-color;
+
+    z-index: 4;
+
+    &--show {
+      display: flex;
+    }
+
+    &-close {
+      position: absolute;
+      top: 3.2rem;
+      right: 3.2rem;
+
+      width: 3.2rem;
+      height: 3.2rem;
+
+      fill: $background-text-white-color;
+    }
+
+    &-logo-link {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-logo {
+      width: 12.4rem;
+    }
+
+    &-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+
+      &-item {
+        &:link,
+        &:visited {
+          padding: 4px 0px;
+
+          font-size: 18px;
+          color: $background-text-white-color;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+
+          border-bottom: 4px solid transparent;
+        }
+
+        &:hover {
+          border-bottom: 4px solid $header-hover-color;
+        }
+
+        &:active {
+          border-bottom: 4px solid $header-hover-color;
+        }
+      }
+    }
+
+    &-media-lang {
+      width: 12.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.4rem;
+    }
+
+    &-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+
+      &-item {
+        width: 35px;
+        height: 35px;
+      }
+
+      &-icon {
+        width: 35px;
+        height: 35px;
+        fill: $background-text-white-color;
+
+        &:hover {
+          fill: $header-hover-color;
+        }
+      }
+    }
+
+    &-lang {
+      &:link,
+      &:visited {
+        color: $background-text-white-color;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      &:hover,
+      &:active {
+        color: $header-hover-color;
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -226,6 +356,10 @@
     &__nav {
       visibility: hidden;
       display: none;
+    }
+
+    &__mob-btn {
+      display: inline-block;
     }
 
     &__nav-mobile {

@@ -205,6 +205,103 @@ body {
 .header__lang:hover, .header__lang:active {
   color: #d8bdb3;
 }
+.header__mob-btn {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: #fcfcfc;
+  display: none;
+}
+.header__mob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 8rem 3.2rem;
+  background-color: #56736d;
+  z-index: 4;
+}
+.header__mob--show {
+  display: flex;
+}
+.header__mob-close {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: #fcfcfc;
+}
+.header__mob-logo-link {
+  display: flex;
+  justify-content: center;
+}
+.header__mob-logo {
+  width: 12.4rem;
+}
+.header__mob-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.header__mob-nav-item:link, .header__mob-nav-item:visited {
+  padding: 4px 0px;
+  font-size: 18px;
+  color: #fcfcfc;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border-bottom: 4px solid transparent;
+}
+.header__mob-nav-item:hover {
+  border-bottom: 4px solid #d8bdb3;
+}
+.header__mob-nav-item:active {
+  border-bottom: 4px solid #d8bdb3;
+}
+.header__mob-media-lang {
+  width: 12.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.header__mob-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.header__mob-media-item {
+  width: 35px;
+  height: 35px;
+}
+.header__mob-media-icon {
+  width: 35px;
+  height: 35px;
+  fill: #fcfcfc;
+}
+.header__mob-media-icon:hover {
+  fill: #d8bdb3;
+}
+.header__mob-lang:link, .header__mob-lang:visited {
+  color: #fcfcfc;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.header__mob-lang:hover, .header__mob-lang:active {
+  color: #d8bdb3;
+}
 
 @media (max-width: 1024px) {
   .header__logo {
@@ -262,6 +359,9 @@ body {
   .header__nav {
     visibility: hidden;
     display: none;
+  }
+  .header__mob-btn {
+    display: inline-block;
   }
   .header__nav-mobile {
     visibility: visible;
