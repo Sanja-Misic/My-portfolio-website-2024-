@@ -27,6 +27,15 @@ navMobCloseBtn.addEventListener('click', () => {
   navMobContainer.classList.remove('header__mob--show');
 });
 
+// //HERO BUTTON - until I create a work page
+// document.addEventListener('DOMContentLoaded', function () {
+//   const scrollButtonHero = document.querySelector('.button-hero');
+
+//   scrollButtonHero.addEventListener('click', function () {
+//     const sectionWork = document.querySelector('.selected');
+//     sectionWork.scrollIntoView({ behavior: 'smooth' });
+//   });
+// });
 // SELECTED HOVER
 
 const design = document.querySelector('.selected__design');

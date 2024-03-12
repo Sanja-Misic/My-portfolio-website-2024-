@@ -81,6 +81,7 @@
   &__background {
     &-icon {
       position: absolute;
+      z-index: -1;
 
       &--1 {
         top: 0%;
