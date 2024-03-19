@@ -27,21 +27,41 @@ navMobCloseBtn.addEventListener('click', () => {
   navMobContainer.classList.remove('header__mob--show');
 });
 
-const design = document.querySelector('.selected__design');
-const develop = document.querySelector('.selected__develop');
+//slested hover
+const design1 = document.querySelector('.selected__design-1');
+const develop1 = document.querySelector('.selected__develop-1');
 
-design.addEventListener('mouseenter', () => {
-  develop.classList.add('selected__active');
+const design2 = document.querySelector('.selected__design-2');
+const develop2 = document.querySelector('.selected__develop-2');
+
+design1.addEventListener('mouseenter', () => {
+  develop1.classList.add('selected__active');
 });
 
-design.addEventListener('mouseleave', () => {
-  develop.classList.remove('selected__active');
+design1.addEventListener('mouseleave', () => {
+  develop1.classList.remove('selected__active');
 });
 
-develop.addEventListener('mouseenter', () => {
-  design.classList.add('selected__active');
+develop1.addEventListener('mouseenter', () => {
+  design1.classList.add('selected__active');
 });
 
-develop.addEventListener('mouseleave', () => {
-  design.classList.remove('selected__active');
+develop1.addEventListener('mouseleave', () => {
+  design1.classList.remove('selected__active');
+});
+
+design2.addEventListener('mouseenter', () => {
+  develop2.classList.add('selected__active');
+});
+
+design2.addEventListener('mouseleave', () => {
+  develop2.classList.remove('selected__active');
+});
+
+develop2.addEventListener('mouseenter', () => {
+  design2.classList.add('selected__active');
+});
+
+develop2.addEventListener('mouseleave', () => {
+  design2.classList.remove('selected__active');
 });

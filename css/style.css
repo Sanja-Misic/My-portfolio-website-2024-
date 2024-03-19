@@ -1103,12 +1103,6 @@ body {
   filter: saturate(0%);
   z-index: -1;
 }
-.selected__img-wrapper-under-constr {
-  filter: saturate(0%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .selected__design:link, .selected__design:active, .selected__design:visited, .selected__develop:link, .selected__develop:active, .selected__develop:visited {
   display: flex;
   align-items: center;
@@ -1302,6 +1296,7 @@ body {
 }
 .challenge__img {
   width: 100%;
+  width: 48rem;
 }
 
 @media (max-width: 1024px) {
@@ -1387,23 +1382,38 @@ body {
   background-size: 128rem;
   background-repeat: no-repeat;
 }
-.process__img-video-wrapper--step2 {
-  background-image: url("../img/design-page/2-lira-excellent.png");
-}
-.process__img-video-wrapper--step3 {
-  background-image: url("../img/design-page/3-lira-excellent.png");
-}
-.process__img-video-wrapper--step4a {
-  background-image: url("../img/design-page/4a-lira-excellent.png");
-}
-.process__img-video-wrapper--step4b {
-  background-image: url("../img/design-page/4b-lira-excellent.png");
-}
-.process__img-video-wrapper--develop {
-  background-image: url("../img/design-page/design-page__lira-excellent.png");
+.process__img-video-wrapper--step1-a {
+  background-image: url("../img/design-page/art-of-sparkles/design-page-art-of-aparkles.png");
   background-repeat: repeat-x;
   background-size: 50rem;
   margin-bottom: 0%;
+}
+.process__img-video-wrapper--step2-a {
+  background-image: url("../img/design-page/art-of-sparkles/2-art-of-sparkles.png");
+}
+.process__img-video-wrapper--step3-a {
+  background-image: url("../img/design-page/art-of-sparkles/3-art-of-sparkles.png");
+}
+.process__img-video-wrapper--step4-a {
+  background-image: url("../img/design-page/art-of-sparkles/4-art-of-sparkles.png");
+}
+.process__img-video-wrapper--step5a-a {
+  background-image: url("../img/design-page/art-of-sparkles/5a-art-of-sparkles.png");
+}
+.process__img-video-wrapper--step5b-a {
+  background-image: url("../img/design-page/art-of-sparkles/5b-art-of-sparkles.png");
+}
+.process__img-video-wrapper--step2-b {
+  background-image: url("../img/design-page/lira-excelent/2-lira-excellent.png");
+}
+.process__img-video-wrapper--step3-b {
+  background-image: url("../img/design-page/lira-excelent/3-lira-excellent.png");
+}
+.process__img-video-wrapper--step4a-b {
+  background-image: url("../img/design-page/lira-excelent/4a-lira-excellent.png");
+}
+.process__img-video-wrapper--step4b-b {
+  background-image: url("../img/design-page/lira-excelent/4b-lira-excellent.png");
 }
 .process__img-video-wrapper video {
   width: 128rem;
@@ -1439,34 +1449,52 @@ body {
   .process__img-video-wrapper {
     background-size: 76.8rem;
   }
-  .process__img-video-wrapper--step2 {
-    background-image: url("../img/design-page/2-lira-excellent-768px.png");
+  .process__img-video-wrapper--step2-a {
+    background-image: url("../img/design-page/art-of-sparkles/2-art-of-sparkles-768px.png");
   }
-  .process__img-video-wrapper--step3 {
-    background-image: url("../img/design-page/3-lira-excellent-768px.png");
+  .process__img-video-wrapper--step2-b {
+    background-image: url("../img/design-page/lira-excelent/2-lira-excellent-768px.png");
   }
-  .process__img-video-wrapper--step4a {
-    background-image: url("../img/design-page/4a-lira-excellent-768px.png");
+  .process__img-video-wrapper--step3-b {
+    background-image: url("../img/design-page/lira-excelent/3-lira-excellent-768px.png");
   }
-  .process__img-video-wrapper--step4b {
-    background-image: url("../img/design-page/4b-lira-excellent-768px.png");
+  .process__img-video-wrapper--step4a-b {
+    background-image: url("../img/design-page/lira-excelent/4a-lira-excellent-768px.png");
+  }
+  .process__img-video-wrapper--step4b-b {
+    background-image: url("../img/design-page/lira-excelent/4b-lira-excellent-768px.png");
   }
 }
 @media (max-width: 425px) {
   .process__img-video-wrapper {
     background-size: 37.5rem;
   }
-  .process__img-video-wrapper--step2 {
-    background-image: url("../img/design-page/2-lira-excellent-375px.png");
+  .process__img-video-wrapper--step2-a {
+    background-image: url("../img/design-page/art-of-sparkles/2-art-of-sparkles-375px.png");
   }
-  .process__img-video-wrapper--step3 {
-    background-image: url("../img/design-page/3-lira-excellent-375px.png");
+  .process__img-video-wrapper--step3-a {
+    background-image: url("../img/design-page/art-of-sparkles/3-art-of-sparkles-375px.png");
   }
-  .process__img-video-wrapper--step4a {
-    background-image: url("../img/design-page/4a-lira-excellent-375px.png");
+  .process__img-video-wrapper--step4-a {
+    background-image: url("../img/design-page/art-of-sparkles/4-art-of-sparkles-375px.png");
   }
-  .process__img-video-wrapper--step4b {
-    background-image: url("../img/design-page/4b-lira-excellent-375px.png");
+  .process__img-video-wrapper--step5a-a {
+    background-image: url("../img/design-page/art-of-sparkles/5a-art-of-sparkles-375px.png");
+  }
+  .process__img-video-wrapper--step5b-a {
+    background-image: url("../img/design-page/art-of-sparkles/5b-art-of-sparkles-375px.png");
+  }
+  .process__img-video-wrapper--step2-b {
+    background-image: url("../img/design-page/lira-excelent/2-lira-excellent-375px.png");
+  }
+  .process__img-video-wrapper--step3-b {
+    background-image: url("../img/design-page/lira-excelent/3-lira-excellent-375px.png");
+  }
+  .process__img-video-wrapper--step4a-b {
+    background-image: url("../img/design-page/lira-excelent/4a-lira-excellent-375px.png");
+  }
+  .process__img-video-wrapper--step4b-b {
+    background-image: url("../img/design-page/lira-excelent/4b-lira-excellent-375px.png");
   }
 }
 .functionalitis {
